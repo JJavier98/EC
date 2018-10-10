@@ -1,0 +1,19 @@
+COMANDOS GDB
+
+gdb-refcard --> buscar en internet todos los comandos
+
+Ctrl + L --> REFRESCA EL TERMINAL
+
+
+1.-Iniciar GDB: gdb [-tui] <ejecutable>, gdb <ejecutable>
+2.- Listar código: list [opciones]
+3.- Ejecutar código: run
+4.- Poner un breakpoint en linea: break <linea>
+5.- Información sobre los registros: info reg
+6.- Imprimir contenido de un registro: print $registro, p $registro
+	modificadores: /x -> hexadecimal, /d -> decimal con signo, /u -> decimal sin sigo, /o -> octal, /t -> binary, /a -> direccion, /c -> caracter, /f -> float
+7.- Ejecutar una sola línea de código sin saltos ni llamadas a funciones: step, s
+8.- Ejecutar una línea de código por completo: next, n
+9.- Desensamblar: disas, disassemble
+10.- Limpiar breakpoint: clear <linea>
+11.- Cambiar valor de un registro: set <$registro> <valor>
