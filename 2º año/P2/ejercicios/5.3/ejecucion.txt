@@ -1,0 +1,101 @@
+rm: no se puede borrar 'media': No existe el archivo o el directorio
+__TEST01__-----------------------------------
+resultado 	 =                -16 (sgn)
+		 = 0x  fffffffffffffff0 (hex)
+		 = 0x ffffffff fffffff0 
+__TEST02__-----------------------------------
+resultado 	 =         1073741824 (sgn)
+		 = 0x          40000000 (hex)
+		 = 0x 00000000 40000000 
+__TEST03__-----------------------------------
+resultado 	 =         2147483648 (sgn)
+		 = 0x          80000000 (hex)
+		 = 0x 00000000 80000000 
+__TEST04__-----------------------------------
+resultado 	 =         4294967296 (sgn)
+		 = 0x         100000000 (hex)
+		 = 0x 00000001 00000000 
+__TEST05__-----------------------------------
+resultado 	 =        34359738352 (sgn)
+		 = 0x         7fffffff0 (hex)
+		 = 0x 00000007 fffffff0 
+__TEST06__-----------------------------------
+resultado 	 =       -34359738368 (sgn)
+		 = 0x  fffffff800000000 (hex)
+		 = 0x fffffff8 00000000 
+__TEST07__-----------------------------------
+resultado 	 =        -4294967296 (sgn)
+		 = 0x  ffffffff00000000 (hex)
+		 = 0x ffffffff 00000000 
+__TEST08__-----------------------------------
+resultado 	 =        -2147483648 (sgn)
+		 = 0x  ffffffff80000000 (hex)
+		 = 0x ffffffff 80000000 
+__TEST09__-----------------------------------
+resultado 	 =        -2147483664 (sgn)
+		 = 0x  ffffffff7ffffff0 (hex)
+		 = 0x ffffffff 7ffffff0 
+__TEST10__-----------------------------------
+resultado 	 =         1600000000 (sgn)
+		 = 0x          5f5e1000 (hex)
+		 = 0x 00000000 5f5e1000 
+__TEST11__-----------------------------------
+resultado 	 =         3200000000 (sgn)
+		 = 0x          bebc2000 (hex)
+		 = 0x 00000000 bebc2000 
+__TEST12__-----------------------------------
+resultado 	 =         4800000000 (sgn)
+		 = 0x         11e1a3000 (hex)
+		 = 0x 00000001 1e1a3000 
+__TEST13__-----------------------------------
+resultado 	 =        32000000000 (sgn)
+		 = 0x         773594000 (hex)
+		 = 0x 00000007 73594000 
+__TEST14__-----------------------------------
+resultado 	 =       -20719476736 (sgn)
+		 = 0x  fffffffb2d05e000 (hex)
+		 = 0x fffffffb 2d05e000 
+__TEST15__-----------------------------------
+resultado 	 =        -1600000000 (sgn)
+		 = 0x  ffffffffa0a1f000 (hex)
+		 = 0x ffffffff a0a1f000 
+__TEST16__-----------------------------------
+resultado 	 =        -3200000000 (sgn)
+		 = 0x  ffffffff4143e000 (hex)
+		 = 0x ffffffff 4143e000 
+__TEST17__-----------------------------------
+resultado 	 =        -4800000000 (sgn)
+		 = 0x  fffffffee1e5d000 (hex)
+		 = 0x fffffffe e1e5d000 
+__TEST18__-----------------------------------
+resultado 	 =       -32000000000 (sgn)
+		 = 0x  fffffff88ca6c000 (hex)
+		 = 0x fffffff8 8ca6c000 
+media.s: Mensajes del ensamblador:
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:63: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+__TEST19__-----------------------------------
+resultado 	 =        20719476736 (sgn)
+		 = 0x         4d2fa2000 (hex)
+		 = 0x 00000004 d2fa2000 
+media.s: Mensajes del ensamblador:
+media.s:63: Error: Definir TEST entre 1..5
+media.s:63: Error: Definir TEST entre 1..5
+media.s:63: Error: Definir TEST entre 1..5
+media.s:63: Error: Definir TEST entre 1..5
+__TEST20__-----------------------------------
+bash: ./media: No existe el archivo o el directorio

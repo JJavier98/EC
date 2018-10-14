@@ -1,0 +1,120 @@
+rm: no se puede borrar 'media': No existe el archivo o el directorio
+__TEST01__-----------------------------------
+media 	 =           1 	 resto 	 =           8
+media 	 = 0x 00000001 	 resto 	 = 0x 00000008
+media_x64 	 =           1 	 resto_x64 	 =           8
+media_x64 	 = 0x 00000001 	 resto_x64 	 = 0x 00000008
+__TEST02__-----------------------------------
+media 	 =          -1 	 resto 	 =          -8
+media 	 = 0x ffffffff 	 resto 	 = 0x fffffff8
+media_x64 	 =          -1 	 resto_x64 	 =          -8
+media_x64 	 = 0x ffffffff 	 resto_x64 	 = 0x fffffff8
+__TEST03__-----------------------------------
+media 	 =  2147483647 	 resto 	 =           0
+media 	 = 0x 7fffffff 	 resto 	 = 0x 00000000
+media_x64 	 =  2147483647 	 resto_x64 	 =           0
+media_x64 	 = 0x 7fffffff 	 resto_x64 	 = 0x 00000000
+__TEST04__-----------------------------------
+media 	 = -2147483648 	 resto 	 =           0
+media 	 = 0x 80000000 	 resto 	 = 0x 00000000
+media_x64 	 = -2147483648 	 resto_x64 	 =           0
+media_x64 	 = 0x 80000000 	 resto_x64 	 = 0x 00000000
+__TEST05__-----------------------------------
+media 	 =          -1 	 resto 	 =           0
+media 	 = 0x ffffffff 	 resto 	 = 0x 00000000
+media_x64 	 =          -1 	 resto_x64 	 =           0
+media_x64 	 = 0x ffffffff 	 resto_x64 	 = 0x 00000000
+__TEST06__-----------------------------------
+media 	 =  2000000000 	 resto 	 =           0
+media 	 = 0x 77359400 	 resto 	 = 0x 00000000
+media_x64 	 =  2000000000 	 resto_x64 	 =           0
+media_x64 	 = 0x 77359400 	 resto_x64 	 = 0x 00000000
+__TEST07__-----------------------------------
+media 	 = -1294967296 	 resto 	 =           0
+media 	 = 0x b2d05e00 	 resto 	 = 0x 00000000
+media_x64 	 = -1294967296 	 resto_x64 	 =           0
+media_x64 	 = 0x b2d05e00 	 resto_x64 	 = 0x 00000000
+__TEST08__-----------------------------------
+media 	 = -2000000000 	 resto 	 =           0
+media 	 = 0x 88ca6c00 	 resto 	 = 0x 00000000
+media_x64 	 = -2000000000 	 resto_x64 	 =           0
+media_x64 	 = 0x 88ca6c00 	 resto_x64 	 = 0x 00000000
+media.s: Mensajes del ensamblador:
+media.s:72: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:72: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:72: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:72: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:75: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:75: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:75: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:75: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:75: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:75: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:75: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:75: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:75: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:75: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:75: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+media.s:75: Aviso: valora 0xffffffff4d2fa200 truncado a 0x4d2fa200
+__TEST09__-----------------------------------
+media 	 =  1294967296 	 resto 	 =           0
+media 	 = 0x 4d2fa200 	 resto 	 = 0x 00000000
+media_x64 	 =  1294967296 	 resto_x64 	 =           0
+media_x64 	 = 0x 4d2fa200 	 resto_x64 	 = 0x 00000000
+__TEST10__-----------------------------------
+media 	 =           1 	 resto 	 =           0
+media 	 = 0x 00000001 	 resto 	 = 0x 00000000
+media_x64 	 =           1 	 resto_x64 	 =           0
+media_x64 	 = 0x 00000001 	 resto_x64 	 = 0x 00000000
+__TEST11__-----------------------------------
+media 	 =           1 	 resto 	 =           1
+media 	 = 0x 00000001 	 resto 	 = 0x 00000001
+media_x64 	 =           1 	 resto_x64 	 =           1
+media_x64 	 = 0x 00000001 	 resto_x64 	 = 0x 00000001
+__TEST12__-----------------------------------
+media 	 =           1 	 resto 	 =           8
+media 	 = 0x 00000001 	 resto 	 = 0x 00000008
+media_x64 	 =           1 	 resto_x64 	 =           8
+media_x64 	 = 0x 00000001 	 resto_x64 	 = 0x 00000008
+__TEST13__-----------------------------------
+media 	 =           1 	 resto 	 =          15
+media 	 = 0x 00000001 	 resto 	 = 0x 0000000f
+media_x64 	 =           1 	 resto_x64 	 =          15
+media_x64 	 = 0x 00000001 	 resto_x64 	 = 0x 0000000f
+__TEST14__-----------------------------------
+media 	 =           2 	 resto 	 =           0
+media 	 = 0x 00000002 	 resto 	 = 0x 00000000
+media_x64 	 =           2 	 resto_x64 	 =           0
+media_x64 	 = 0x 00000002 	 resto_x64 	 = 0x 00000000
+__TEST15__-----------------------------------
+media 	 =          -1 	 resto 	 =           0
+media 	 = 0x ffffffff 	 resto 	 = 0x 00000000
+media_x64 	 =          -1 	 resto_x64 	 =           0
+media_x64 	 = 0x ffffffff 	 resto_x64 	 = 0x 00000000
+__TEST16__-----------------------------------
+media 	 =          -1 	 resto 	 =          -1
+media 	 = 0x ffffffff 	 resto 	 = 0x ffffffff
+media_x64 	 =          -1 	 resto_x64 	 =          -1
+media_x64 	 = 0x ffffffff 	 resto_x64 	 = 0x ffffffff
+__TEST17__-----------------------------------
+media 	 =          -1 	 resto 	 =          -8
+media 	 = 0x ffffffff 	 resto 	 = 0x fffffff8
+media_x64 	 =          -1 	 resto_x64 	 =          -8
+media_x64 	 = 0x ffffffff 	 resto_x64 	 = 0x fffffff8
+__TEST18__-----------------------------------
+media 	 =          -1 	 resto 	 =         -15
+media 	 = 0x ffffffff 	 resto 	 = 0x fffffff1
+media_x64 	 =          -1 	 resto_x64 	 =         -15
+media_x64 	 = 0x ffffffff 	 resto_x64 	 = 0x fffffff1
+__TEST19__-----------------------------------
+media 	 =          -2 	 resto 	 =           0
+media 	 = 0x fffffffe 	 resto 	 = 0x 00000000
+media_x64 	 =          -2 	 resto_x64 	 =           0
+media_x64 	 = 0x fffffffe 	 resto_x64 	 = 0x 00000000
+media.s: Mensajes del ensamblador:
+media.s:72: Error: Definir TEST ente 1..19
+media.s:75: Error: Definir TEST ente 1..19
+media.s:75: Error: Definir TEST ente 1..19
+media.s:75: Error: Definir TEST ente 1..19
+__TEST20__-----------------------------------
+bash: ./media: No existe el archivo o el directorio

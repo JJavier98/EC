@@ -1,0 +1,57 @@
+rm: no se puede borrar 'media': No existe el archivo o el directorio
+__TEST01__-----------------------------------
+resultado 	 =                 16 (uns)
+		 = 0x                10 (hex)
+		 = 0x 00000000 00000010 
+__TEST02__-----------------------------------
+resultado 	 =         4294967280 (uns)
+		 = 0x          fffffff0 (hex)
+		 = 0x 00000000 fffffff0 
+__TEST03__-----------------------------------
+resultado 	 =         4294967296 (uns)
+		 = 0x         100000000 (hex)
+		 = 0x 00000001 00000000 
+__TEST04__-----------------------------------
+resultado 	 =        68719476720 (uns)
+		 = 0x         ffffffff0 (hex)
+		 = 0x 0000000f fffffff0 
+__TEST05__-----------------------------------
+resultado 	 =        68719476720 (uns)
+		 = 0x         ffffffff0 (hex)
+		 = 0x 0000000f fffffff0 
+__TEST06__-----------------------------------
+resultado 	 =         3200000000 (uns)
+		 = 0x          bebc2000 (hex)
+		 = 0x 00000000 bebc2000 
+__TEST07__-----------------------------------
+resultado 	 =         4800000000 (uns)
+		 = 0x         11e1a3000 (hex)
+		 = 0x 00000001 1e1a3000 
+media.s: Mensajes del ensamblador:
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+media.s:41: Aviso: valora 0x12a05f200 truncado a 0x2a05f200
+__TEST08__-----------------------------------
+resultado 	 =        11280523264 (uns)
+		 = 0x         2a05f2000 (hex)
+		 = 0x 00000002 a05f2000 
+media.s: Mensajes del ensamblador:
+media.s:41: Error: Definir TEST entre 1..8
+media.s:41: Error: Definir TEST entre 1..8
+media.s:41: Error: Definir TEST entre 1..8
+media.s:41: Error: Definir TEST entre 1..8
+__TEST09__-----------------------------------
+bash: ./media: No existe el archivo o el directorio
