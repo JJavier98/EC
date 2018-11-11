@@ -1,3 +1,5 @@
+set write on
+file bomba
 layout asm
 layout regs
 br main
