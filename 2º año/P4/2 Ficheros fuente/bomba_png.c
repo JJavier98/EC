@@ -5,7 +5,14 @@
 #include <sys/time.h>	// para gettimeofday(), struct timeval
 
 #define SIZE 100
-#define TLIM 60
+#define TLIM 5
+
+char p[] = "portatil\n";
+
+int d1 = 2;
+int d2 = 0;
+int d3 = 1;
+int d4 = 8;
 
 int elementosVector(char v[])
 {
@@ -51,7 +58,6 @@ void defused(void){
 }
 
 int main(){
-	char p[SIZE];
 	char p_read[SIZE];
 	int pc;
 	int m;
@@ -60,17 +66,6 @@ int main(){
 	int u;
 	int correcto = 1;
 	int n;
-
-	p[0] = 'p';
-	p[8] = '\n';
-	p[1] = 'o';
-	p[7] = 'l';
-	p[2] = 'r';
-	p[6] = 'i';
-	p[3] = 't';
-	p[5] = 't';
-	p[4] = 'a';
-
 
 	struct timeval tv1,tv2;	// gettimeofday() secs-usecs
 	gettimeofday(&tv1,NULL);
@@ -117,11 +112,6 @@ int main(){
 	pc -= d*10;
 
 	u = pc;
-
-	int d1 = 2;
-	int d2 = 0;
-	int d3 = 1;
-	int d4 = 8;
 
 	if(	m != d1 || c != d2 || d != d3 || u != d4 )
 	    boom();
