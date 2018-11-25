@@ -37,17 +37,17 @@
 	set $rax=0
 ### Hay una funcionX un tanto peculiar de la cual desconocemos su funcionamiento,
 ### pero vemos que se le pasa como parámetro una variable global p que está en
-### 0x602060 vamos a imprimir para ver la contraseña
+### 0x404060 vamos a imprimir para ver la contraseña
 	br *main+154
 	cont
-	p(char*)0x602060
+	p(char*)0x404060
 ### Vemos la funcion elementosVector que si la estudiamos averiguamos
 ### que cuenta el número de elementos que tiene un vector
 ### (algo lógico por el nombre). La primera vez que se le llama se le
 ### pasa como parámetro la contraseña real. Vamos a cambiar el resultado devuelto
 ### a 0 para, posteriormente, saltarnos el bucle de comprobación. 
 	### Podemos ver la contraseña de la siguiente manera:
-		p(char*)0x602060
+		p(char*)0x404060
 	#vemos que la contraseña ha cambiado
 
 	br *main+183
@@ -79,7 +79,7 @@
 	p(int) d2
 	p(int) d3
 	p(int) d4
-### Debemos guardar donde están guardados(0x60206c, 0x60208c, 0x602070, 0x602074)
+### Debemos guardar donde están guardados(0x40406c, 0x40408c, 0x404070, 0x404074)
 
 	br *main+666
 	cont
@@ -105,11 +105,11 @@
 ### reabrir ejecutable con permisos r/w
 	file bomba_png
 ### realizar los cambios
-	set {char[13]}0x602060="hola,adios.\n"
-	set {int     }0x60206c=1
-	set {int     }6299789=2
-	set {int     }0x602070=3
-	set {int     }0x602074=4
+	set {char[5]}0x404060="hola\n"
+	set {int     }0x40406c=1
+	#set {int     }0x40408c=2
+	set {int     }0x404070=3
+	set {int     }0x404074=4
 ### comprobar las instrucciones cambiadas
 	p (char[0xd])p
 	p (int)d1
